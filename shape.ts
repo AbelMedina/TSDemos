@@ -1,10 +1,19 @@
-// class Person {
-//   name: string;
-// }
+namespace Shape {
+  // Definición de una clase Person dentro del namespace Shape
+  class Person {
+    // La clase Person tiene una propiedad llamada name de tipo string
+    name: string;
+  }
 
-// const jill: { name: string } = {
-//   name: "jill",
-// };
+  // Creación de una constante jill de tipo objeto con una propiedad name
+  // El tipo se define inline como { name: string }
+  const jill: { name: string } = {
+    name: "jill",
+  };
 
-// const person: Person = jill;
-// console.log(person);
+  // Asignación del objeto jill a una variable de tipo Person
+  // En TypeScript, esto es válido debido a la compatibilidad estructural de tipos
+  const person: Person = jill;
+  // Se imprime en consola el contenido de la variable person
+  console.log(person);
+}
